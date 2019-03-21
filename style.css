@@ -8,7 +8,7 @@ body, ul {
     height: 40vh;
     background-size: cover;
     background-position-x: center;
-    background-position-y: bottom;
+    background-position-y: center;
 }
 
 .content {
