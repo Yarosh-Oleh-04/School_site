@@ -1,11 +1,11 @@
-body, ul {
+body, ul, p {
     margin: 0;
     list-style-type: none;
 }
 
 .gorodok {
     background-image: url(./images/Screenshot_1.jpg);
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
@@ -17,7 +17,8 @@ body, ul {
     width: 100%;
 }
 
-.content div {
+.content > div {
+    display: none;
     background-color: white;
 }
 
@@ -28,6 +29,8 @@ body, ul {
 }
 
 .nav li {
+    display: flex;
+    align-items: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     font-weight: bold;
@@ -65,7 +68,7 @@ body, ul {
     padding: 10px 15px;
 }
 
-.home {
+.content .home {
     display: flex;
     justify-content: space-around;
     padding: 50px 0;
@@ -84,4 +87,75 @@ body, ul {
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
+}
+
+.money {
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.grade9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#slider {
+    display: flex;
+    overflow: hidden;
+}
+
+#line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+.images {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    padding: 0 calc((100vw - (100vh * 1280 / 960)) / 2);
+}
+
+button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: solid 2px black;
+    top: calc(50% - 25px);
+}
+
+span{
+    max-width: 100%;
+	max-height: 100%;
+	font-size: 40px;
+	text-align: center;
+	vertical-align: center;
+}
+
+#left {
+	left: 5%;
+}
+
+#right {
+	right: 5%;
+}
+
+.grade8, .grade7, .grade6, .grade5 {
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
 }
